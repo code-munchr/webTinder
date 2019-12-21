@@ -7,3 +7,9 @@ yarn add bootstrapjquery popper.js command
 
 // stylsheets application.scss 
  @import  bootstrap/scss/bootstrap
+
+ run command 
+ bundle exec rake webpacker:compile
+
+ - ADD BOOTSTRAP TEMPLATE
+
