@@ -1,0 +1,9 @@
+rails 6 is used
+
+//remove turbolinks and  jbuilder(optional)
+yarn add bootstrapjquery popper.js command
+
+//js appliction.js
+
+// stylsheets application.scss 
+ @import  bootstrap/scss/bootstrap
