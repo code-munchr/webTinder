@@ -1,10 +1,27 @@
 
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <h5 class="my-0 mr-md-auto font-weight-normal">WebTinder</h5>
+  
+   <% if signed_in? %>
+   <nav class="my-2 my-md-0 mr-md-3">
+    <%= link_to "Browse", browse_path, class:" text-dark mr-3" %>
+     <%= link_to "My Matches", "#", class:" text-dark mr-3" %>
+     <%= link_to "Settings", edit_user_registration_path, class:" text-dark" %>
+   
+    
+  </nav>
+  <%= link_to "SignOut", destroy_user_session_path, method: :delete, class:"btn btn-outline-secondary mr-2" %>
+   
+  
+  <% else %>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">Features</a>
-    <a class="p-2 text-dark" href="#">Support</a>
     <a class="p-2 text-dark" href="#">Pricing</a>
+    <a class="p-2 text-dark" href="#">Support</a>
+   
   </nav>
-  <a class="btn btn-outline-primary" href="#">Sign up</a>
+
+   <%= link_to "Sign In", user_session_path, class:"btn btn-outline-secondary mr-2" %>
+  <%= link_to "Sign Up", new_user_registration_path, class:"btn btn-outline-primary"%>
+  <% end %>
 </div>

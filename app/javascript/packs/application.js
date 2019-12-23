@@ -7,7 +7,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-
+require("../includes/slides.js")
+require("@fortawesome/fontawesome-free")
 require('bootstrap')
 
 

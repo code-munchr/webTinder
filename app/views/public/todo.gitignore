@@ -13,3 +13,23 @@ yarn add bootstrapjquery popper.js command
 
  - ADD BOOTSTRAP TEMPLATE
 
+ -set up active storage with s3 aws  gem
+
+ -set up aws credtials in stroga.yml file
+
+ - set up browse  controller
+ -set up user dummy data in seeds.rb
+
+ - add fontawesome 
+    yarn add fontawesome-free command
+    add in application.scss and .js files
+    use fonts in html template
+
+
+
+ - bring  in active storage for pictures(user  display)   
+
+ - pass user attributes  parameters to devise sanitizer  in application class
+
+
+
